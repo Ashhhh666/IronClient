@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "OdinAddon",
+  "description": "A Hypixel Skyblock odin addon with no diorite and zpdb",
+  "authors": [],
+  "contact": {},
+  "license": "BSD-3-Clause",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "me.ash.odin.OdinClient"
+      }
+    ]
+  },
+  "mixins": [
+    "odinClient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "${minecraft}",
+    "odin": "*"
+  }
+}
