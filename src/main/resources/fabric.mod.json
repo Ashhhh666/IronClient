@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "Iron",
+  "description": "A Hypixel Skyblock odin addon called Iron!",
+  "authors": ["Ashley"],
+  "contact": {},
+  "license": "BSD-3-Clause",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "me.ash.odin.IronClient"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "${minecraft}",
+    "odin": ">=0.1.5-1.21.10"
+  },
+  "mixins": [
+    "ironClient.mixins.json"
+  ]
+}

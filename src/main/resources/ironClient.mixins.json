@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.ash.odin.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MultiPlayerGameModeMixin",
+    "ModuleManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
